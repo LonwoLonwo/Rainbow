@@ -8,5 +8,12 @@ public class Colors
         {
             System.out.println(colors[i]);
         }
+
+        System.out.println("или");
+
+        for(int j = 0; j < colors.length; j++)
+        {
+            System.out.println(colors[6 - j]);
+        }
     }
 }
