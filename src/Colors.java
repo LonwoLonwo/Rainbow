@@ -2,7 +2,9 @@ public class Colors
 {
     public static void main(String[] args) {
 
-        String colors[] = {"Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Violet"};
+        String text = "Каждый охотник желает знать, где сидит фазан";
+
+        String colors[] = text.split(",?\\s+");
 
         for(int i = (colors.length - 1); i >= 0; i--)
         {
@@ -11,9 +13,9 @@ public class Colors
 
         System.out.println("или");
 
-        for(int j = 0; j < colors.length; j++)
+        for(int i = 0; i < colors.length; i++)
         {
-            System.out.println(colors[6 - j]);
+            System.out.println(colors[(colors.length - 1) - i]);
         }
     }
 }
